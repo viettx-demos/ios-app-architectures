@@ -1,14 +1,14 @@
 //
-//  NumberModel.swift
-//  NumberCounterMVP
+//  NumberEntity.swift
+//  NumberCounterVIPER
 //
-//  Created by Tran Viet on 10/14/17.
+//  Created by Tran Viet on 10/15/17.
 //  Copyright © 2017 Tran Viet. All rights reserved.
 //
 
 import Foundation
 
-class NumberModel {
+class NumberEntity {
     private var value:Int = 0
     
     init(value:Int) {

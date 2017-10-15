@@ -1,8 +1,8 @@
 //
 //  NumberVC.swift
-//  NumberCounterMVP
+//  NumberCounterVIPER
 //
-//  Created by Tran Viet on 10/14/17.
+//  Created by Tran Viet on 10/15/17.
 //  Copyright © 2017 Tran Viet. All rights reserved.
 //
 
@@ -10,14 +10,17 @@ import UIKit
 
 class NumberVC: UIViewController, NumberView {
 
+    static let identifier = "numberVC"
+    
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var decreaseButton: UIButton!
     
-    private let numberPresenter = NumberPresenter(model: NumberModel(value: 3))
+    var numberPresenter:NumberPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.numberPresenter.attach(view: self)
+        
+        self.numberPresenter?.getNumber()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,14 +28,14 @@ class NumberVC: UIViewController, NumberView {
     }
     
     @IBAction func decreaseAction(_ sender: UIButton) {
-        self.numberPresenter.decreaseNumber()
+        self.numberPresenter?.decrease()
     }
     
     @IBAction func increaseAction(_ sender: UIButton) {
-        self.numberPresenter.increaseNumber()
+        self.numberPresenter?.increase()
     }
     
-    // Implement methods from NumberView
+    // Adopt NumberView
     func setTextNumber(text: String) {
         self.numberLabel.text = text
     }

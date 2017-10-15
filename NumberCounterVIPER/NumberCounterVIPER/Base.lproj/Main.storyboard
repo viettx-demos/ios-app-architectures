@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NumberVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="numberVC" id="BYZ-38-t0r" customClass="NumberVC" customModule="NumberCounterVIPER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMx-Gr-psL">
+                                <rect key="frame" x="155" y="40" width="65" height="30"/>
+                                <state key="normal" title="Decrease"/>
+                                <connections>
+                                    <action selector="decreaseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rmk-LP-Ql3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oa6-5D-tUb">
+                                <rect key="frame" x="158" y="125" width="59" height="30"/>
+                                <state key="normal" title="Increase"/>
+                                <connections>
+                                    <action selector="increaseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bgx-xL-QXx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35i-Ir-KHV">
+                                <rect key="frame" x="182" y="87" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="35i-Ir-KHV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2u3-Vl-1rZ"/>
+                            <constraint firstItem="Oa6-5D-tUb" firstAttribute="top" secondItem="35i-Ir-KHV" secondAttribute="bottom" constant="17" id="4hd-Md-eyf"/>
+                            <constraint firstItem="YMx-Gr-psL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ISl-OX-sKP"/>
+                            <constraint firstItem="35i-Ir-KHV" firstAttribute="top" secondItem="YMx-Gr-psL" secondAttribute="bottom" constant="17" id="Ngf-Fu-xfE"/>
+                            <constraint firstItem="YMx-Gr-psL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="gOl-W7-hDF"/>
+                            <constraint firstItem="Oa6-5D-tUb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zog-af-P1F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="decreaseButton" destination="YMx-Gr-psL" id="7k4-ac-knc"/>
+                        <outlet property="numberLabel" destination="35i-Ir-KHV" id="EdW-qE-H3A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

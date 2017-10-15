@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F5D05AD1F93632D00A1D101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D05AC1F93632D00A1D101 /* AppDelegate.swift */; };
+		6F5D05B21F93632D00A1D101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5D05B01F93632D00A1D101 /* Main.storyboard */; };
+		6F5D05B41F93632D00A1D101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F5D05B31F93632D00A1D101 /* Assets.xcassets */; };
+		6F5D05B71F93632D00A1D101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5D05B51F93632D00A1D101 /* LaunchScreen.storyboard */; };
+		6F5D05C21F9365CA00A1D101 /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D05BE1F9365CA00A1D101 /* NumberViewModel.swift */; };
+		6F5D05C31F9365CA00A1D101 /* NumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D05BF1F9365CA00A1D101 /* NumberModel.swift */; };
+		6F5D05C41F9365CA00A1D101 /* NumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D05C01F9365CA00A1D101 /* NumberVC.swift */; };
+		6F5D05C71F93665300A1D101 /* DataBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D05C61F93665300A1D101 /* DataBinding.swift */; };
+		6F5D05CF1F93762A00A1D101 /* NumberCounterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D05CE1F93762A00A1D101 /* NumberCounterViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F5D05D11F93762A00A1D101 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F5D05A11F93632D00A1D101 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F5D05A81F93632D00A1D101;
+			remoteInfo = NumberCounterMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F5D05A91F93632D00A1D101 /* NumberCounterMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberCounterMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F5D05AC1F93632D00A1D101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F5D05B11F93632D00A1D101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F5D05B31F93632D00A1D101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F5D05B61F93632D00A1D101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F5D05B81F93632D00A1D101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F5D05BE1F9365CA00A1D101 /* NumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
+		6F5D05BF1F9365CA00A1D101 /* NumberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberModel.swift; sourceTree = "<group>"; };
+		6F5D05C01F9365CA00A1D101 /* NumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberVC.swift; sourceTree = "<group>"; };
+		6F5D05C61F93665300A1D101 /* DataBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBinding.swift; sourceTree = "<group>"; };
+		6F5D05CC1F93762A00A1D101 /* NumberCounterMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumberCounterMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F5D05CE1F93762A00A1D101 /* NumberCounterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCounterViewModelTests.swift; sourceTree = "<group>"; };
+		6F5D05D01F93762A00A1D101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F5D05A61F93632D00A1D101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F5D05C91F93762A00A1D101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F5D05A01F93632D00A1D101 = {
+			isa = PBXGroup;
+			children = (
+				6F5D05AB1F93632D00A1D101 /* NumberCounterMVVM */,
+				6F5D05CD1F93762A00A1D101 /* NumberCounterMVVMTests */,
+				6F5D05AA1F93632D00A1D101 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F5D05AA1F93632D00A1D101 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F5D05A91F93632D00A1D101 /* NumberCounterMVVM.app */,
+				6F5D05CC1F93762A00A1D101 /* NumberCounterMVVMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F5D05AB1F93632D00A1D101 /* NumberCounterMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				6F5D05AC1F93632D00A1D101 /* AppDelegate.swift */,
+				6F5D05C61F93665300A1D101 /* DataBinding.swift */,
+				6F5D05BF1F9365CA00A1D101 /* NumberModel.swift */,
+				6F5D05BE1F9365CA00A1D101 /* NumberViewModel.swift */,
+				6F5D05C01F9365CA00A1D101 /* NumberVC.swift */,
+				6F5D05B01F93632D00A1D101 /* Main.storyboard */,
+				6F5D05B31F93632D00A1D101 /* Assets.xcassets */,
+				6F5D05B51F93632D00A1D101 /* LaunchScreen.storyboard */,
+				6F5D05B81F93632D00A1D101 /* Info.plist */,
+			);
+			path = NumberCounterMVVM;
+			sourceTree = "<group>";
+		};
+		6F5D05CD1F93762A00A1D101 /* NumberCounterMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F5D05CE1F93762A00A1D101 /* NumberCounterViewModelTests.swift */,
+				6F5D05D01F93762A00A1D101 /* Info.plist */,
+			);
+			path = NumberCounterMVVMTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F5D05A81F93632D00A1D101 /* NumberCounterMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F5D05BB1F93632D00A1D101 /* Build configuration list for PBXNativeTarget "NumberCounterMVVM" */;
+			buildPhases = (
+				6F5D05A51F93632D00A1D101 /* Sources */,
+				6F5D05A61F93632D00A1D101 /* Frameworks */,
+				6F5D05A71F93632D00A1D101 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NumberCounterMVVM;
+			productName = NumberCounterMVVM;
+			productReference = 6F5D05A91F93632D00A1D101 /* NumberCounterMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F5D05CB1F93762A00A1D101 /* NumberCounterMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F5D05D51F93762A00A1D101 /* Build configuration list for PBXNativeTarget "NumberCounterMVVMTests" */;
+			buildPhases = (
+				6F5D05C81F93762A00A1D101 /* Sources */,
+				6F5D05C91F93762A00A1D101 /* Frameworks */,
+				6F5D05CA1F93762A00A1D101 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F5D05D21F93762A00A1D101 /* PBXTargetDependency */,
+			);
+			name = NumberCounterMVVMTests;
+			productName = NumberCounterMVVMTests;
+			productReference = 6F5D05CC1F93762A00A1D101 /* NumberCounterMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F5D05A11F93632D00A1D101 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Tran Viet";
+				TargetAttributes = {
+					6F5D05A81F93632D00A1D101 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					6F5D05CB1F93762A00A1D101 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6F5D05A81F93632D00A1D101;
+					};
+				};
+			};
+			buildConfigurationList = 6F5D05A41F93632D00A1D101 /* Build configuration list for PBXProject "NumberCounterMVVM" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F5D05A01F93632D00A1D101;
+			productRefGroup = 6F5D05AA1F93632D00A1D101 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F5D05A81F93632D00A1D101 /* NumberCounterMVVM */,
+				6F5D05CB1F93762A00A1D101 /* NumberCounterMVVMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F5D05A71F93632D00A1D101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F5D05B71F93632D00A1D101 /* LaunchScreen.storyboard in Resources */,
+				6F5D05B41F93632D00A1D101 /* Assets.xcassets in Resources */,
+				6F5D05B21F93632D00A1D101 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F5D05CA1F93762A00A1D101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F5D05A51F93632D00A1D101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F5D05C41F9365CA00A1D101 /* NumberVC.swift in Sources */,
+				6F5D05C71F93665300A1D101 /* DataBinding.swift in Sources */,
+				6F5D05C21F9365CA00A1D101 /* NumberViewModel.swift in Sources */,
+				6F5D05C31F9365CA00A1D101 /* NumberModel.swift in Sources */,
+				6F5D05AD1F93632D00A1D101 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F5D05C81F93762A00A1D101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F5D05CF1F93762A00A1D101 /* NumberCounterViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F5D05D21F93762A00A1D101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F5D05A81F93632D00A1D101 /* NumberCounterMVVM */;
+			targetProxy = 6F5D05D11F93762A00A1D101 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F5D05B01F93632D00A1D101 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F5D05B11F93632D00A1D101 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F5D05B51F93632D00A1D101 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F5D05B61F93632D00A1D101 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F5D05B91F93632D00A1D101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F5D05BA1F93632D00A1D101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F5D05BC1F93632D00A1D101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NumberCounterMVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.skylab.NumberCounterMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F5D05BD1F93632D00A1D101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NumberCounterMVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.skylab.NumberCounterMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F5D05D31F93762A00A1D101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NumberCounterMVVMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.skylab.NumberCounterMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NumberCounterMVVM.app/NumberCounterMVVM";
+			};
+			name = Debug;
+		};
+		6F5D05D41F93762A00A1D101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NumberCounterMVVMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.skylab.NumberCounterMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NumberCounterMVVM.app/NumberCounterMVVM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F5D05A41F93632D00A1D101 /* Build configuration list for PBXProject "NumberCounterMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F5D05B91F93632D00A1D101 /* Debug */,
+				6F5D05BA1F93632D00A1D101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F5D05BB1F93632D00A1D101 /* Build configuration list for PBXNativeTarget "NumberCounterMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F5D05BC1F93632D00A1D101 /* Debug */,
+				6F5D05BD1F93632D00A1D101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F5D05D51F93762A00A1D101 /* Build configuration list for PBXNativeTarget "NumberCounterMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F5D05D31F93762A00A1D101 /* Debug */,
+				6F5D05D41F93762A00A1D101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F5D05A11F93632D00A1D101 /* Project object */;
+}
